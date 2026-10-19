@@ -1,0 +1,253 @@
+/* ===== Main Dashboard ===== */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #F2F7FD;
+    -fx-text-fill: #244568;
+}
+
+/* ===== Labels ===== */
+.label {
+    -fx-text-fill: #355778;
+    -fx-font-size: 12px;
+}
+
+#importedDataViewLabel,
+#summaryLabel {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #153E66;
+}
+
+/* Dashboard statistic headings */
+#avgTempLabel,
+#rainyDaysLabel,
+#avgHumidityLabel,
+#totalDaysLabel {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #356895;
+}
+
+/* Dashboard statistic values */
+#avgTempNumberDisplay,
+#numDaysNumberDisplay,
+#avgHumidityPercentDisplay,
+#totalDaysNumDisplay {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1261A0;
+}
+
+/* Supporting text */
+#tempBasedOnDataLabel,
+#rainyBasedOnDataLabel,
+#humidityBasedOnDataLabel,
+#totalDaysBasedOnDataLabel {
+    -fx-font-size: 10px;
+    -fx-text-fill: #7892AD;
+}
+
+/* ===== Buttons ===== */
+.button {
+    -fx-background-color: #1769AA;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-padding: 9px 14px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0F568F;
+}
+
+.button:pressed {
+    -fx-background-color: #0A416E;
+}
+
+.button:disabled {
+    -fx-background-color: #CBD9E8;
+    -fx-text-fill: #71869B;
+    -fx-opacity: 1;
+}
+
+/* ===== Ranking Menu ===== */
+.menu-button {
+    -fx-background-color: white;
+    -fx-text-fill: #1769AA;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-color: #B8D0E8;
+    -fx-border-radius: 7px;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: #E5F1FC;
+}
+
+.context-menu {
+    -fx-background-color: white;
+    -fx-background-radius: 6px;
+    -fx-border-color: #C8D9EB;
+    -fx-border-radius: 6px;
+}
+
+.menu-item .label {
+    -fx-text-fill: #244568;
+}
+
+.menu-item:focused {
+    -fx-background-color: #E5F1FC;
+}
+
+/* ===== Text Fields ===== */
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #244568;
+    -fx-prompt-text-fill: #91A5BA;
+    -fx-background-radius: 6px;
+    -fx-border-color: #C5D8EA;
+    -fx-border-radius: 6px;
+    -fx-padding: 7px;
+}
+
+.text-field:focused {
+    -fx-border-color: #3182CE;
+}
+
+/* ===== Summary Text Area ===== */
+.text-area {
+    -fx-background-color: white;
+    -fx-text-fill: #355778;
+    -fx-font-size: 12px;
+    -fx-background-radius: 7px;
+    -fx-border-color: #C5D8EA;
+    -fx-border-radius: 7px;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+    -fx-background-radius: 7px;
+}
+
+.text-area:focused {
+    -fx-border-color: #3182CE;
+}
+
+/* ===== Tables ===== */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #C5D8EA;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-table-cell-border-color: #E7EFF7;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #DCEBFA;
+    -fx-background-radius: 6px 6px 0 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 32px;
+    -fx-border-color: transparent transparent #C5D8EA transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #214D78;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-cell-size: 29px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #F5F9FE;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #E6F2FF;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #B8D9F7;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #29486B;
+    -fx-font-size: 11px;
+    -fx-padding: 4px 7px;
+}
+
+/* ===== Charts ===== */
+.chart {
+    -fx-padding: 8px;
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
+.chart-title {
+    -fx-text-fill: #214D78;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.axis {
+    -fx-tick-label-fill: #607D9A;
+    -fx-font-size: 10px;
+}
+
+.axis-label {
+    -fx-text-fill: #345C87;
+    -fx-font-size: 11px;
+}
+
+.chart-plot-background {
+    -fx-background-color: #FBFDFF;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: #E2ECF6;
+}
+
+.chart-pie-label {
+    -fx-fill: #29486B;
+    -fx-font-size: 10px;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #29486B;
+}
+
+/* ===== Scrollbars ===== */
+.scroll-bar {
+    -fx-background-color: #F2F7FD;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #A8C7E5;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #7DA9D2;
+}
+
+/* ===== Focus Styling ===== */
+*:focused {
+    -fx-focus-color: #3182CE;
+    -fx-faint-focus-color: rgba(49, 130, 206, 0.15);
+}
